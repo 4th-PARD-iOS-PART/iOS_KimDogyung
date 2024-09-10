@@ -5,4 +5,4 @@
 * Button Style과 Title 속성을 Plain으로 주고 Background Configuration에서 Corner Radius 속성 변경하여 원 버튼 완성
 * 간단한 사칙연산 계산이 가능하도록 만들었음
 
-<img src="./images/hw1.png" width="50%" height="50%"/>
+<img src="./images/hw1.png" width="30%" height="30%"/>
