@@ -1,4 +1,4 @@
-# 과제3
+# 과제4
 
 - search bar 시행착오 겪음
 - 탭바 만들때 let vc2 = UINavigationController(rootViewController: SearchViewController()) 를 선언해서 View를 controller에 embed 해야함
