@@ -17,7 +17,9 @@ class ViewController: UITabBarController {
     
     func setTabBar() {
         let vc1 = UINavigationController(rootViewController: HomeViewController())
-        let vc2 = SearchViewController()
+        
+        // 서치바 쓰려면 따로 또 루트 등록해줘야 하는 듯
+        let vc2 = UINavigationController(rootViewController: SearchViewController())
         let vc3 = ComingSoonViewController()
         let vc4 = DownloadsViewController()
         let vc5 = MoreViewController()

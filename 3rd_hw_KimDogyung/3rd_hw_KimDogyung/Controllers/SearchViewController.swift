@@ -4,14 +4,13 @@ class SearchViewController: UIViewController {
     
     var searchData = SearchModel.modeling
     
-//    let searchBar: UISearchBar = {
-//        let bar = UISearchBar()
-//        bar.placeholder = "Test"
-//        bar.setImage(UIImage(named: "icSearchNonW"), for: UISearchBar.Icon.search, state: .normal)
-//        bar.setImage(UIImage(named: "IcCancel"), for: .clear, state: .normal)
-//        
-//        return bar
-//    }()
+    let searchBar: UISearchBar = {
+        let bar = UISearchBar()
+        bar.placeholder = "Search for a show, movie, genre, etc."
+        bar.searchBarStyle = .minimal
+        bar.translatesAutoresizingMaskIntoConstraints = false // Enable Auto Layout
+        return bar
+    }()
     
     let titleLabel: UILabel = {
         let label = UILabel()
@@ -31,28 +30,31 @@ class SearchViewController: UIViewController {
         return tableView
     }()
     
-    private let searchController: UISearchController = {
-        let controller = UISearchController(searchResultsController: nil)
-        controller.searchBar.placeholder = "Search for a show, movie, genre, etc."
-        controller.obscuresBackgroundDuringPresentation = false
-        return controller
-    }()
+//    private let searchController: UISearchController = {
+//        let controller = UISearchController(searchResultsController: nil)
+//        controller.searchBar.placeholder = "Search for a show, movie, genre, etc."
+//        controller.obscuresBackgroundDuringPresentation = false
+//        return controller
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
         view.addSubview(titleLabel)
         view.addSubview(tableView)
+        view.addSubview(searchBar)
         
         setConstraints()
         
         tableView.delegate = self
         tableView.dataSource = self
         
+        searchBar.delegate = self
         
-        navigationItem.searchController = searchController
-        navigationItem.hidesSearchBarWhenScrolling = false // Ensure search bar is always visible
-        definesPresentationContext = true // Important to avoid search controller lingering between screens
+        
+//        navigationItem.searchController = searchController
+//        navigationItem.hidesSearchBarWhenScrolling = false // Ensure search bar is always visible
+//        definesPresentationContext = true // Important to avoid search controller lingering between screens
     }
     
     override func viewDidLayoutSubviews() {
@@ -60,10 +62,21 @@ class SearchViewController: UIViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData() // Ensure table view is reloaded after the view is in the hierarchy
+    }
+    
     
     func setConstraints(){
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 12),
+            
+            searchBar.topAnchor.constraint(equalTo: view.topAnchor, constant: 0), // Align to the top
+            searchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 13), // Padding from the left
+            searchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15), // Padding from the right
+            searchBar.heightAnchor.constraint(equalToConstant: 50),
+            
+            titleLabel.topAnchor.constraint(equalTo: searchBar.bottomAnchor, constant: 12.88),
             titleLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 10),
             
             tableView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 21),

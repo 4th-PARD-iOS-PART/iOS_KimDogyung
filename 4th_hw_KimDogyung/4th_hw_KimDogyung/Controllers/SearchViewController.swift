@@ -4,15 +4,6 @@ class SearchViewController: UIViewController {
     
     var searchData = SearchModel.modeling
     
-//    let searchBar: UISearchBar = {
-//        let bar = UISearchBar()
-//        bar.placeholder = "Test"
-//        bar.setImage(UIImage(named: "icSearchNonW"), for: UISearchBar.Icon.search, state: .normal)
-//        bar.setImage(UIImage(named: "IcCancel"), for: .clear, state: .normal)
-//        
-//        return bar
-//    }()
-    
     let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Top Searches"
