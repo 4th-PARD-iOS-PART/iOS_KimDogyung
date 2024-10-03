@@ -25,6 +25,10 @@
 		D57226A42CA452730007E311 /* ComingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57226A32CA452730007E311 /* ComingSoonViewController.swift */; };
 		D57226A62CA452850007E311 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57226A52CA452850007E311 /* DownloadsViewController.swift */; };
 		D57226A82CA452950007E311 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57226A72CA452950007E311 /* MoreViewController.swift */; };
+		D5F9F98E2CAC4448007A8E62 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9F98D2CAC4448007A8E62 /* SearchModel.swift */; };
+		D5F9F9902CAC46DD007A8E62 /* SearchImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9F98F2CAC46DD007A8E62 /* SearchImageTableViewCell.swift */; };
+		D5F9F9922CAD1425007A8E62 /* ComingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9F9912CAD1425007A8E62 /* ComingModel.swift */; };
+		D5F9F9942CAD17C0007A8E62 /* ComingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9F9932CAD17C0007A8E62 /* ComingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		D57226A32CA452730007E311 /* ComingSoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewController.swift; sourceTree = "<group>"; };
 		D57226A52CA452850007E311 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 		D57226A72CA452950007E311 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		D5F9F98D2CAC4448007A8E62 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		D5F9F98F2CAC46DD007A8E62 /* SearchImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageTableViewCell.swift; sourceTree = "<group>"; };
+		D5F9F9912CAD1425007A8E62 /* ComingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingModel.swift; sourceTree = "<group>"; };
+		D5F9F9932CAD17C0007A8E62 /* ComingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,8 @@
 				D506419D2CA50507000DB11B /* CollectionViewTableViewCell.swift */,
 				D506419F2CA52459000DB11B /* HeaderUIView.swift */,
 				D50641A42CA5B5E2000DB11B /* ImageCollectionViewCell.swift */,
+				D5F9F98F2CAC46DD007A8E62 /* SearchImageTableViewCell.swift */,
+				D5F9F9932CAD17C0007A8E62 /* ComingTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				D50641A22CA537DC000DB11B /* PosterModel.swift */,
+				D5F9F98D2CAC4448007A8E62 /* SearchModel.swift */,
+				D5F9F9912CAD1425007A8E62 /* ComingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,10 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5F9F98E2CAC4448007A8E62 /* SearchModel.swift in Sources */,
+				D5F9F9902CAC46DD007A8E62 /* SearchImageTableViewCell.swift in Sources */,
 				D50641A32CA537DC000DB11B /* PosterModel.swift in Sources */,
 				D57226A22CA4524E0007E311 /* SearchViewController.swift in Sources */,
+				D5F9F9942CAD17C0007A8E62 /* ComingTableViewCell.swift in Sources */,
 				D57226732CA43EB40007E311 /* ViewController.swift in Sources */,
 				D57226A62CA452850007E311 /* DownloadsViewController.swift in Sources */,
+				D5F9F9922CAD1425007A8E62 /* ComingModel.swift in Sources */,
 				D572266F2CA43EB40007E311 /* AppDelegate.swift in Sources */,
 				D57226712CA43EB40007E311 /* SceneDelegate.swift in Sources */,
 				D50641A52CA5B5E2000DB11B /* ImageCollectionViewCell.swift in Sources */,
