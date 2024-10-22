@@ -18,7 +18,7 @@ class DetailHeaderUIView:UIView {
     let mainImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "janggu")
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
         return imageView
@@ -474,16 +474,18 @@ class DetailHeaderUIView:UIView {
             mainImageView.topAnchor.constraint(equalTo: self.topAnchor),
             mainImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             mainImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            mainImageView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.0),
-            mainImageView.heightAnchor.constraint(equalTo: mainImageView.widthAnchor, multiplier: 0.75), // Maintain aspect ratio of 4:3
+            mainImageView.widthAnchor.constraint(equalTo: mainImageView.heightAnchor, multiplier: 4 / 3),
+
+            //mainImageView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.0),
+            //mainImageView.heightAnchor.constraint(equalTo: mainImageView.widthAnchor, multiplier: 0.75), // Maintain aspect ratio of 4:3
             
             playMainImageView.centerXAnchor.constraint(equalTo: mainImageView.centerXAnchor),
             playMainImageView.centerYAnchor.constraint(equalTo: mainImageView.centerYAnchor),
             playMainImageView.widthAnchor.constraint(equalToConstant: 54),
             playMainImageView.heightAnchor.constraint(equalToConstant: 54),
             
-            neflixLogoIamgeView.widthAnchor.constraint(equalToConstant: 10),
-            neflixLogoIamgeView.heightAnchor.constraint(equalToConstant: 17),
+            neflixLogoIamgeView.widthAnchor.constraint(equalToConstant: 21),
+            neflixLogoIamgeView.heightAnchor.constraint(equalToConstant: 28),
 //            neflixLogoIamgeView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.8),
             logoStackView.topAnchor.constraint(equalTo: mainImageView.bottomAnchor, constant: 11),
             logoStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 8),

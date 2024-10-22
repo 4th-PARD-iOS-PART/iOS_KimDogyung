@@ -98,8 +98,10 @@
    아직 원인을 찾지 못함 어떤 stackView에는 늘어나고 어떤 경우에는 정상적으로 배치 됨
    trailingAnchor를 적용안하면 되긴 하는데 왜 이런 현상이 일어나는지 모르겠음
 
-<!-- <p align="center">
-<img src="./images/searchView.png" width="30%" height="30%"/>
-<img src="./images/comingView.png" width="30%" height="30%"/>
-<img src="./images/downView.png" width="30%" height="30%"/>
-</p> -->
+4. UIImageView 비율
+   사진 비율 유지하려고 하면 빈공간이 생김 이것도 해결 방법 아직 못 찾음
+
+<p align="center">
+<img src="./images/img1.png" width="30%" height="30%"/>
+<img src="./images/img2.png" width="30%" height="30%"/>
+</p>
