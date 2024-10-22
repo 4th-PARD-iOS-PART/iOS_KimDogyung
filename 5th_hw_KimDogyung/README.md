@@ -1,5 +1,10 @@
 # 과제5
 
+<p align="center">
+<img src="./images/img1.png" width="30%" height="30%"/>
+<img src="./images/img2.png" width="30%" height="30%"/>
+</p>
+
 1. UINavigationController
 
    UINavigationController를 사용하여 화면 전환
@@ -100,8 +105,3 @@
 
 4. UIImageView 비율
    사진 비율 유지하려고 하면 빈공간이 생김 이것도 해결 방법 아직 못 찾음
-
-<p align="center">
-<img src="./images/img1.png" width="30%" height="30%"/>
-<img src="./images/img2.png" width="30%" height="30%"/>
-</p>
