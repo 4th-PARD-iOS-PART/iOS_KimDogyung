@@ -83,8 +83,9 @@ class DownloadsViewController: UIViewController {
     
     func setUIForButton(){
         NSLayoutConstraint.activate([
-            button.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 184),
+            //button.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 184),
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60),
             //button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 67),
             //button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -67),
         ])
